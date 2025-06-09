@@ -36,13 +36,18 @@ const Page: React.FC = () => (
             <Heading type={1} color='gray' text='Artículo de ayuda' />
             <div className='paragraph-container'>
               <p>
-                Para iniciar sesión en tu cuenta de StreamEvents, haz clic en el botón "Iniciar sesión" en la parte superior derecha de la página. Ingresa tu correo electrónico y contraseña, y pulsa "Entrar".
+                Para iniciar sesión en tu cuenta de StreamEvents, haz clic en el botón "Iniciar
+                sesión" en la parte superior derecha de la página. Ingresa tu correo electrónico y
+                contraseña, y pulsa "Entrar".
               </p>
               <p>
-                Si aún no tienes cuenta, puedes registrarte fácilmente desde la sección de "Registro". Solo necesitas un correo electrónico válido y una contraseña segura. También puedes iniciar sesión con tu cuenta de Twitch.
+                Si aún no tienes cuenta, puedes registrarte fácilmente desde la sección de
+                "Registro". Solo necesitas un correo electrónico válido y una contraseña segura.
+                También puedes iniciar sesión con tu cuenta de Twitch.
               </p>
               <p>
-                ¿Olvidaste tu contraseña? Haz clic en "¿Olvidaste tu contraseña?" en la pantalla de inicio de sesión y sigue los pasos para restablecerla.
+                ¿Olvidaste tu contraseña? Haz clic en "¿Olvidaste tu contraseña?" en la pantalla de
+                inicio de sesión y sigue los pasos para restablecerla.
               </p>
             </div>
 
@@ -61,7 +66,8 @@ const Page: React.FC = () => (
         <div className='center'>
           <Heading type={3} color='gray' text='¿Tienes más preguntas?' />
           <p className='gray'>
-            Si no encuentras lo que buscas o necesitas más ayuda, contáctanos y estaremos encantados de ayudarte.
+            Si no encuentras lo que buscas o necesitas más ayuda, contáctanos y estaremos encantados
+            de ayudarte.
           </p>
 
           <div className='button-container'>
@@ -80,7 +86,8 @@ const Page: React.FC = () => (
 
 const title = 'Ayuda';
 const canonical = 'https://streamevents.com/help/answer/1';
-const description = 'Centro de ayuda de StreamEvents: respuestas a preguntas frecuentes sobre cuentas, eventos y más.';
+const description =
+  'Centro de ayuda de StreamEvents: respuestas a preguntas frecuentes sobre cuentas, eventos y más.';
 
 export const metadata: Metadata = {
   title,

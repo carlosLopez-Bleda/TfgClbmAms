@@ -12,13 +12,24 @@ const Page: React.FC = () => (
       <div className='container'>
         <div className='padding-bottom center'>
           <Heading type={1} color='gray' text='Eventos en España' />
-          <p className='gray'>Explora, busca y filtra los mejores eventos de streamers en España.</p>
+          <p className='gray'>
+            Explora, busca y filtra los mejores eventos de streamers en España.
+          </p>
         </div>
       </div>
     </Section>
 
     <Section className='list-cards'>
-      <div className='container center'>
+      <div
+        className='container'
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+          gap: '2rem',
+          justifyItems: 'center',
+          paddingInline: '1rem',
+        }}
+      >
         <EventCard
           url='1'
           from='10'

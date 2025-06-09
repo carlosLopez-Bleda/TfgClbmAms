@@ -67,13 +67,7 @@ const FormPhoto: React.FC<IProps> = ({ data }) => {
       }}
     >
       <div className='upload-picture'>
-        <input
-          type='file'
-          name='image'
-          id='image'
-          className='input-file'
-          accept='.jpg,.jpeg'
-        />
+        <input type='file' name='image' id='image' className='input-file' accept='.jpg,.jpeg' />
         <label htmlFor='image'>
           <span className='material-symbols-outlined'>add_a_photo</span>
         </label>

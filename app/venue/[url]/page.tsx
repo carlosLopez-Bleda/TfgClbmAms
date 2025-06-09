@@ -34,11 +34,15 @@ const Page: React.FC = () => (
           <Heading type={4} color='gray' text='Sobre el recinto' />
           <div className='paragraph-container gray'>
             <p>
-              El Wizink Center es uno de los espacios más icónicos para eventos multitudinarios en España. 
-              Su infraestructura moderna y capacidad de más de 17.000 personas lo convierten en el lugar ideal para galas, conciertos y eventos de gran formato.
+              El Wizink Center es uno de los espacios más icónicos para eventos multitudinarios en
+              España. Su infraestructura moderna y capacidad de más de 17.000 personas lo convierten
+              en el lugar ideal para galas, conciertos y eventos de gran formato.
             </p>
             <p>
-              Este recinto ha acogido importantes shows de música y deportes, y ahora es también el epicentro de los mayores eventos de streamers en el país, como "La Velada del Año", "Squid Craft Games Live", y otros espectáculos en directo protagonizados por creadores de contenido.
+              Este recinto ha acogido importantes shows de música y deportes, y ahora es también el
+              epicentro de los mayores eventos de streamers en el país, como "La Velada del Año",
+              "Squid Craft Games Live", y otros espectáculos en directo protagonizados por creadores
+              de contenido.
             </p>
           </div>
         </div>
@@ -55,7 +59,8 @@ const Page: React.FC = () => (
         <Heading type={6} color='gray' text='¿Cómo llegar?' />
         <div className='paragraph-container'>
           <p className='gray'>
-            Puedes llegar en metro (Línea 2 – Goya) o en varias líneas de autobús (2, 28, 30, 56, 143). También hay parking disponible en las cercanías.
+            Puedes llegar en metro (Línea 2 – Goya) o en varias líneas de autobús (2, 28, 30, 56,
+            143). También hay parking disponible en las cercanías.
           </p>
           <p className='gray'>
             <a target='_blank' href='https://www.google.com/maps' className='blue'>
@@ -71,7 +76,9 @@ const Page: React.FC = () => (
         <Heading type={6} color='gray' text='Accesibilidad' />
         <div className='paragraph-container'>
           <p className='gray'>
-            El recinto cuenta con accesos adaptados, plazas reservadas y baños accesibles para personas con movilidad reducida. Si necesitas asistencia, contacta con la organización del evento.
+            El recinto cuenta con accesos adaptados, plazas reservadas y baños accesibles para
+            personas con movilidad reducida. Si necesitas asistencia, contacta con la organización
+            del evento.
           </p>
         </div>
       </div>
@@ -111,7 +118,8 @@ const Page: React.FC = () => (
 
 const title = 'Wizink Center – Madrid';
 const canonical = 'https://streamevents.app/venue/wizink-center';
-const description = 'Descubre los próximos eventos de streamers en el Wizink Center con StreamEvents. Información del recinto, cómo llegar, accesibilidad y eventos destacados.';
+const description =
+  'Descubre los próximos eventos de streamers en el Wizink Center con StreamEvents. Información del recinto, cómo llegar, accesibilidad y eventos destacados.';
 
 export const metadata: Metadata = {
   title,

@@ -14,9 +14,9 @@ const Page: React.FC = () => (
         <div className='center'>
           <Heading type={1} color='gray' text='Activación de cuenta' />
           <p className='gray form-information'>
-            Antes de poder iniciar sesión, debes activar tu cuenta con el código enviado a tu
-            correo electrónico. Si no ves el correo en unos minutos, revisa la carpeta de correo
-            no deseado o spam. También puedes hacerlo más tarde desde el enlace de tu correo.
+            Antes de poder iniciar sesión, debes activar tu cuenta con el código enviado a tu correo
+            electrónico. Si no ves el correo en unos minutos, revisa la carpeta de correo no deseado
+            o spam. También puedes hacerlo más tarde desde el enlace de tu correo.
           </p>
         </div>
         <Form />
@@ -26,8 +26,8 @@ const Page: React.FC = () => (
 );
 
 const title = 'Activación de cuenta';
-const canonical = 'https://modern-ticketing.com/members/activate/account';
-const description = 'Modern Ticketing es una solución moderna para gestionar eventos y entradas.';
+const canonical = 'https://streamevents.com/members/activate/account';
+const description = 'Stream Events es una solución moderna para gestionar eventos y entradas.';
 
 export const metadata: Metadata = {
   title,
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     description,
     url: canonical,
     type: 'website',
-    siteName: 'Modern Ticketing',
-    images: 'https://modern-ticketing.com/logo192.png',
+    siteName: 'Stream Events',
+    images: 'https://streamevents.com/logo192.png',
   },
 };
 

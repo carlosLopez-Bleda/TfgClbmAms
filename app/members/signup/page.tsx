@@ -30,21 +30,21 @@ const Page: React.FC = () => (
 );
 
 const title = 'Crear cuenta';
-const canonical = 'https://modern-ticketing.com/members/signup';
+const canonical = 'https://streamevents.com/members/signup';
 const description = 'Modern ticketing es una solución moderna de venta de entradas';
 
 export const metadata: Metadata = {
   title,
   description,
-  keywords: 'modern ticketing',
+  keywords: 'stream events',
   alternates: { canonical },
   openGraph: {
     title,
     description,
     url: canonical,
     type: 'website',
-    siteName: 'Modern Ticketing',
-    images: 'https://modern-ticketing.com/logo192.png',
+    siteName: 'Stream Events',
+    images: 'https://streamevents.com/logo192.png',
   },
 };
 

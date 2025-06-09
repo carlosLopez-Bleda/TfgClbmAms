@@ -23,7 +23,8 @@ const Page: React.FC = () => (
 
 const title = 'Aviso legal';
 const canonical = 'https://stream-events.com/legal';
-const description = 'Consulta los términos legales, privacidad y condiciones de uso de StreamEvents.';
+const description =
+  'Consulta los términos legales, privacidad y condiciones de uso de StreamEvents.';
 
 export const metadata: Metadata = {
   title,

@@ -8,7 +8,7 @@ interface IProps {
 }
 
 const ButtonCircle: React.FC<IProps> = ({ url, icon, text }) => (
-  <Link className='circle-button' href={`/${url}`}>
+<Link className='circle-button' href={url}>
     <div className='circle'>
       <span className='material-symbols-outlined right-icon'>{icon}</span>
     </div>

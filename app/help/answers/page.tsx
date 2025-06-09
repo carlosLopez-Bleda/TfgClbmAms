@@ -13,7 +13,9 @@ const Page: React.FC = () => (
       <div className='container'>
         <div className='center'>
           <Heading type={1} color='gray' text='Todas las respuestas' />
-          <p className='gray'>Consulta todas las categorías de ayuda y sus respuestas disponibles.</p>
+          <p className='gray'>
+            Consulta todas las categorías de ayuda y sus respuestas disponibles.
+          </p>
         </div>
       </div>
     </Section>
@@ -73,7 +75,8 @@ const Page: React.FC = () => (
         <div className='center'>
           <Heading type={3} color='gray' text='¿Tienes más preguntas?' />
           <p className='gray'>
-            Si no encuentras lo que buscas o necesitas más ayuda, contáctanos y estaremos encantados de ayudarte.
+            Si no encuentras lo que buscas o necesitas más ayuda, contáctanos y estaremos encantados
+            de ayudarte.
           </p>
 
           <div className='button-container'>
@@ -92,7 +95,8 @@ const Page: React.FC = () => (
 
 const title = 'Centro de ayuda - Todas las respuestas';
 const canonical = 'https://streamevents.com/help/answers';
-const description = 'Explora las respuestas a las preguntas frecuentes sobre StreamEvents. Ayuda sobre cuentas, entradas y más.';
+const description =
+  'Explora las respuestas a las preguntas frecuentes sobre StreamEvents. Ayuda sobre cuentas, entradas y más.';
 
 export const metadata: Metadata = {
   title,

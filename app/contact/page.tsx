@@ -13,8 +13,8 @@ const Page: React.FC = () => (
         <div className='padding-bottom center'>
           <Heading type={1} color='gray' text='Contacto' />
           <p className='gray form-information'>
-            No dudes en ponerte en contacto con nosotros a través de los siguientes canales de comunicación
-            para cualquier duda, sugerencia o incidencia.
+            No dudes en ponerte en contacto con nosotros a través de los siguientes canales de
+            comunicación para cualquier duda, sugerencia o incidencia.
           </p>
         </div>
       </div>
@@ -25,8 +25,9 @@ const Page: React.FC = () => (
         <div className='center'>
           <Heading type={5} color='gray' text='Atención al cliente' />
           <p className='gray form-information'>
-            Nuestro equipo de soporte está disponible de lunes a viernes de <strong>9:00 a 18:00</strong>,
-            y los fines de semana de <strong>10:00 a 14:00</strong>. Haz clic en el botón de abajo para atención en directo.
+            Nuestro equipo de soporte está disponible de lunes a viernes de{' '}
+            <strong>9:00 a 18:00</strong>, y los fines de semana de <strong>10:00 a 14:00</strong>.
+            Haz clic en el botón de abajo para atención en directo.
           </p>
           <div className='button-container'>
             <ButtonLink
@@ -52,10 +53,16 @@ const Page: React.FC = () => (
         <div className='center'>
           <Heading type={5} color='gray' text='¿En qué podemos ayudarte?' />
           <p className='gray form-information'>
-            ¿Quieres consultar primero nuestra sección de ayuda para ver si encuentras allí tu respuesta?
+            ¿Quieres consultar primero nuestra sección de ayuda para ver si encuentras allí tu
+            respuesta?
           </p>
           <div className='button-container'>
-            <ButtonLink color='gray-filled' text='Ir a la ayuda' rightIcon='arrow_forward' url='help' />
+            <ButtonLink
+              color='gray-filled'
+              text='Ir a la ayuda'
+              rightIcon='arrow_forward'
+              url='help'
+            />
           </div>
         </div>
       </div>
@@ -79,12 +86,18 @@ const Page: React.FC = () => (
               <br />
               <strong>Nuestra oficina está en</strong>
               <br />
-              Calle de los Streamers, 12<br />
+              Calle de los Streamers, 12
+              <br />
               28010 Madrid, España
             </p>
           </div>
           <div className='button-container'>
-            <ButtonLink color='blue-filled' text='Abrir en mapas' rightIcon='arrow_forward' url='' />
+            <ButtonLink
+              color='blue-filled'
+              text='Abrir en mapas'
+              rightIcon='arrow_forward'
+              url=''
+            />
           </div>
         </div>
       </div>

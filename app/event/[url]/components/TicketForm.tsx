@@ -38,14 +38,11 @@ const TicketForm: React.FC<IProps> = ({ data }) => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const orderTickets = (array: IData[]): IData[] =>
-    array.sort((a, b) => a.ordering - b.ordering);
+  const orderTickets = (array: IData[]): IData[] => array.sort((a, b) => a.ordering - b.ordering);
 
   const countTickets = (array: IData[]): number =>
     array.reduce((sum, curr) => {
-      return curr.quantity != null && !isNaN(curr.quantity)
-        ? sum + curr.quantity
-        : sum;
+      return curr.quantity != null && !isNaN(curr.quantity) ? sum + curr.quantity : sum;
     }, 0);
 
   const handleDecrease = (ticket: IData): void => {
@@ -92,7 +89,10 @@ const TicketForm: React.FC<IProps> = ({ data }) => {
       setLoading(true);
       window.location.href = '/buy';
     } else {
-      showAlert({ type: 'error', text: 'Debes seleccionar al menos una entrada para este evento.' });
+      showAlert({
+        type: 'error',
+        text: 'Debes seleccionar al menos una entrada para este evento.',
+      });
     }
   };
 
@@ -119,7 +119,9 @@ const TicketForm: React.FC<IProps> = ({ data }) => {
             ) : (
               <>
                 <div className='quantity'>
-                  <button type='button' onClick={() => handleDecrease(ticket)}>-</button>
+                  <button type='button' onClick={() => handleDecrease(ticket)}>
+                    -
+                  </button>
                   <input
                     readOnly
                     type='text'
@@ -127,7 +129,9 @@ const TicketForm: React.FC<IProps> = ({ data }) => {
                     value={ticket.quantity ?? 0}
                     onChange={() => {}}
                   />
-                  <button type='button' onClick={() => handleIncrease(ticket)}>+</button>
+                  <button type='button' onClick={() => handleIncrease(ticket)}>
+                    +
+                  </button>
                 </div>
                 <span>{ticket.name}</span>
                 <strong>{ticket.price}</strong>

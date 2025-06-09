@@ -47,7 +47,8 @@ const Page: React.FC = () => (
 
 const title = 'Mi cuenta';
 const canonical = 'https://streamevents.com/members/account';
-const description = 'StreamEvents es una solución moderna para gestionar eventos y entradas, de tus streamers favoritos';
+const description =
+  'StreamEvents es una solución moderna para gestionar eventos y entradas, de tus streamers favoritos';
 
 export const metadata: Metadata = {
   title,
@@ -59,7 +60,7 @@ export const metadata: Metadata = {
     description,
     url: canonical,
     type: 'website',
-    siteName: 'Modern Ticketing',
+    siteName: 'Stream Events',
     images: 'https://streamevents.com/logo192.png',
   },
 };

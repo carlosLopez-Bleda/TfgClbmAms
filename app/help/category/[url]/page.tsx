@@ -47,7 +47,8 @@ const Page: React.FC = () => (
         <div className='center'>
           <Heading type={3} color='gray' text='¿Tienes más preguntas?' />
           <p className='gray'>
-            Si no encuentras lo que buscas o necesitas más ayuda, contáctanos y estaremos encantados de ayudarte.
+            Si no encuentras lo que buscas o necesitas más ayuda, contáctanos y estaremos encantados
+            de ayudarte.
           </p>
 
           <div className='button-container'>

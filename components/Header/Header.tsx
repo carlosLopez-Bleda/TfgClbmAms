@@ -49,18 +49,20 @@ const Header: React.FC = () => {
           <Link href='/news' className='gray'>
             Noticias
           </Link>
+          <Link href='/streamers' className='gray'>
+            Streamers
+          </Link>
         </div>
 
         <div className='members' ref={wrapperRef}>
           {/* Autenticación futura */}
           <Link href='/members/account'>
-            <ProfilePhoto image='https://i.pinimg.com/736x/68/76/99/6876993a25a8fc274cc09aee12171034.jpg' size='small' />
+            <ProfilePhoto
+              image='https://i.pinimg.com/736x/68/76/99/6876993a25a8fc274cc09aee12171034.jpg'
+              size='small'
+            />
           </Link>
-          <button
-            type='button'
-            className='menu-opener'
-            onClick={() => setDropdown(!dropdown)}
-          >
+          <button type='button' className='menu-opener' onClick={() => setDropdown(!dropdown)}>
             Alex
             <span className='material-symbols-outlined'>
               {dropdown ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}
@@ -118,6 +120,11 @@ const Header: React.FC = () => {
                 <li>
                   <Link href='/tickets' className='white'>
                     Mis entradas
+                  </Link>
+                </li>
+                <li>
+                  <Link href='/streamers' className='white'>
+                    Streamers
                   </Link>
                 </li>
                 <li>

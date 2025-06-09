@@ -15,7 +15,8 @@ const Page: React.FC = () => (
         <div className='center'>
           <Heading type={1} color='gray' text='Comprar entradas' />
           <p className='gray'>
-            Introduce tus datos personales y de pago. Te enviaremos las entradas a tu correo electrónico de forma inmediata.
+            Introduce tus datos personales y de pago. Te enviaremos las entradas a tu correo
+            electrónico de forma inmediata.
           </p>
         </div>
 
@@ -80,7 +81,8 @@ const Page: React.FC = () => (
 
 const title = 'Comprar entradas';
 const canonical = 'https://streamevents.com/comprar';
-const description = 'StreamEvents es la plataforma para descubrir y asistir a los eventos más importantes de streamers en España.';
+const description =
+  'StreamEvents es la plataforma para descubrir y asistir a los eventos más importantes de streamers en España.';
 
 export const metadata: Metadata = {
   title,

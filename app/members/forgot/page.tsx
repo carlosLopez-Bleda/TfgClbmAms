@@ -14,8 +14,9 @@ const Page: React.FC = () => (
         <div className='center'>
           <Heading type={1} color='gray' text='¿Olvidaste tu contraseña?' />
           <p className='gray form-information'>
-            Por favor, introduce tu correo electrónico registrado. Te enviaremos instrucciones para restablecer tu contraseña.
-            Si no ves el correo en unos minutos, revisa tu bandeja de spam o correo no deseado.
+            Por favor, introduce tu correo electrónico registrado. Te enviaremos instrucciones para
+            restablecer tu contraseña. Si no ves el correo en unos minutos, revisa tu bandeja de
+            spam o correo no deseado.
           </p>
         </div>
         <Form />
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
     url: canonical,
     type: 'website',
     siteName: 'StreamEvents',
-    images: 'https://modern-ticketing.com/logo192.png',
+    images: 'https://streamevents.com/logo192.png',
   },
 };
 

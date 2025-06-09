@@ -14,7 +14,7 @@ const Page: React.FC = () => (
       <div className='container'>
         <div className='center'>
           <Heading type={1} color='gray' text='Explorar' />
-          <p className="text-muted-foreground">
+          <p className='text-muted-foreground'>
             Descubre, busca y filtra los mejores eventos de streamers en España.
           </p>
         </div>

@@ -15,7 +15,8 @@ const Page: React.FC = () => (
           <Heading type={1} color='gray' text='Cambiar contraseña' />
           <p className='gray form-information'>
             Por favor, introduce tu nueva contraseña. Es recomendable utilizar una contraseña segura
-            que no estés usando en otros sitios. Tu nueva contraseña debe tener al menos 8 caracteres.
+            que no estés usando en otros sitios. Tu nueva contraseña debe tener al menos 8
+            caracteres.
           </p>
         </div>
         <Form />
@@ -25,7 +26,7 @@ const Page: React.FC = () => (
 );
 
 const title = 'Cambiar contraseña';
-const canonical = 'https://moderneventos.com/members/password';
+const canonical = 'https://streamevents.com/members/password';
 const description = 'StreamEvents es la plataforma moderna para eventos de streamers en España';
 
 export const metadata: Metadata = {
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
     url: canonical,
     type: 'website',
     siteName: 'StreamEvents',
-    images: 'https://modern-ticketing.com/logo192.png', // cámbialo si ya tienes un logo nuevo
+    images: 'https://streamevents.com/logo192.png', // cámbialo si ya tienes un logo nuevo
   },
 };
 

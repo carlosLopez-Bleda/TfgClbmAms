@@ -15,8 +15,7 @@ const Page: React.FC = () => (
           <Heading type={1} color='gray' text='Cambiar correo electrónico' />
           <p className='gray form-information'>
             Por favor, introduce tu nuevo correo electrónico. Te enviaremos un email de verificación
-            con un código de activación. Tu correo actual es{' '}
-            <strong>cenk@cenksari.com</strong>
+            con un código de activación. Tu correo actual es <strong>cenk@cenksari.com</strong>
           </p>
         </div>
         <Form />
@@ -26,7 +25,7 @@ const Page: React.FC = () => (
 );
 
 const title = 'Cambiar correo electrónico';
-const canonical = 'https://modern-ticketing.com/members/email';
+const canonical = 'https://streamevents.com/members/email';
 const description = 'Una solución moderna para la gestión de entradas en línea.';
 
 export const metadata: Metadata = {
@@ -40,7 +39,7 @@ export const metadata: Metadata = {
     url: canonical,
     type: 'website',
     siteName: 'StreamEvents',
-    images: 'https://modern-ticketing.com/logo192.png',
+    images: 'https://streamevents.com/logo192.png',
   },
 };
 

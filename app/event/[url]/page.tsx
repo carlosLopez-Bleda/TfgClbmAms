@@ -40,8 +40,8 @@ const Page: React.FC = () => (
             <div className='paragraph-container gray'>
               <p>
                 La Velada del Año es el evento de boxeo organizado por Ibai Llanos que reúne a los
-                streamers más populares de España y Latinoamérica en una noche de combates, música
-                y espectáculo sin igual.
+                streamers más populares de España y Latinoamérica en una noche de combates, música y
+                espectáculo sin igual.
               </p>
               <p>
                 En su cuarta edición, el evento se celebra en el Estadio Santiago Bernabéu con
@@ -102,14 +102,26 @@ const Page: React.FC = () => (
               Ver detalles del recinto
             </Link>
             &nbsp; &bull; &nbsp;
-            <a target='_blank' href='https://www.google.com/maps?q=santiago+bernabeu' className='blue'>
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://www.google.com/maps?q=santiago+bernabeu'
+              className='blue'
+            >
               Cómo llegar
             </a>
+
             &nbsp; &bull; &nbsp;
-            <a target='_blank' href='https://www.google.com/maps/place/Santiago+Bernabeu' className='blue'>
+
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://www.google.com/maps/place/Santiago+Bernabeu'
+              className='blue'
+            >
               Ver en mapa
             </a>
-          </p>
+                </p>
         </div>
       </div>
     </Section>
@@ -148,7 +160,8 @@ const Page: React.FC = () => (
 
 const title = 'La Velada del Año 4';
 const canonical = 'https://streamevents.com/event/velada4';
-const description = 'Toda la información y entradas para La Velada del Año 4, el evento de boxeo de streamers más esperado en España.';
+const description =
+  'Toda la información y entradas para La Velada del Año 4, el evento de boxeo de streamers más esperado en España.';
 
 export const metadata: Metadata = {
   title,
@@ -161,7 +174,7 @@ export const metadata: Metadata = {
     url: canonical,
     type: 'website',
     siteName: 'StreamEvents',
-    images: 'https://modern-ticketing.com/logo192.png',
+    images: 'https://streamevents.com/logo192.png',
   },
 };
 

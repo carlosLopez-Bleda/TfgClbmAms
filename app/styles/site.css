@@ -946,7 +946,6 @@ td {
   align-items: stretch;
 }
 
-
 .list-cards .card {
   display: flex;
   flex-direction: column;
@@ -961,7 +960,6 @@ td {
     0 0 0 1px rgba(17, 24, 39, 0.05);
 }
 
-
 .list-cards .card:first-child {
   margin-left: 5px;
 }
@@ -974,7 +972,6 @@ td {
   overflow: hidden;
 }
 
-
 .card-title.venue {
   background-color: var(--blackest-gray);
 }
@@ -986,7 +983,6 @@ td {
 .card .button-container {
   margin-top: auto;
 }
-
 
 .ticker {
   padding: 15px 0;

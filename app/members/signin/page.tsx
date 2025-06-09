@@ -14,7 +14,8 @@ const Page: React.FC = () => (
         <div className='center'>
           <Heading type={1} color='gray' text='Iniciar sesión' />
           <p className='gray form-information'>
-            Introduce tu correo electrónico y contraseña para acceder a tu cuenta. ¿No tienes cuenta?{' '}
+            Introduce tu correo electrónico y contraseña para acceder a tu cuenta. ¿No tienes
+            cuenta?{' '}
             <Link href='/members/signup' className='blue'>
               Regístrate aquí
             </Link>
@@ -27,7 +28,7 @@ const Page: React.FC = () => (
 );
 
 const title = 'Iniciar sesión';
-const canonical = 'https://modern-ticketing.com/members/signin';
+const canonical = 'https://streamevents.com/members/signin';
 const description = 'StreamEvents es una solución moderna para eventos en línea y en vivo.';
 
 export const metadata: Metadata = {
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     url: canonical,
     type: 'website',
     siteName: 'StreamEvents',
-    images: 'https://modern-ticketing.com/logo192.png',
+    images: 'https://streamevents.com/logo192.png',
   },
 };
 

@@ -26,8 +26,8 @@ const Page: React.FC = () => (
 );
 
 const title = 'Activación de e-mail';
-const canonical = 'https://modern-ticketing.com/members/activate/email';
-const description = 'Modern ticketing es una solución moderna para eventos y entradas';
+const canonical = 'https://streamevents.com/members/activate/email';
+const description = 'Stream Events es una solución moderna para eventos y entradas';
 
 export const metadata: Metadata = {
   title,
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     description,
     url: canonical,
     type: 'website',
-    siteName: 'Modern Ticketing',
-    images: 'https://modern-ticketing.com/logo192.png',
+    siteName: 'Stream Events',
+    images: 'https://streamevents.com/logo192.png',
   },
 };
 

@@ -16,7 +16,8 @@ const Page: React.FC = () => (
           <Heading type={1} color='gray' text='Organizadores' />
           <p className='gray form-information'>
             Tanto si organizas un evento presencial como una experiencia online para tus seguidores,
-            StreamEvents te ofrece la infraestructura ideal para centralizar la información y atraer a tu audiencia.
+            StreamEvents te ofrece la infraestructura ideal para centralizar la información y atraer
+            a tu audiencia.
           </p>
         </div>
       </div>
@@ -28,7 +29,8 @@ const Page: React.FC = () => (
           <Heading type={5} color='gray' text='Gestiona todo desde una sola plataforma' />
           <p className='gray form-information'>
             Con nuestra herramienta para organizadores puedes publicar eventos, enlazar entradas,
-            recibir estadísticas de seguimiento y conectar directamente con tu comunidad. ¡Y es totalmente gratuito!
+            recibir estadísticas de seguimiento y conectar directamente con tu comunidad. ¡Y es
+            totalmente gratuito!
           </p>
           <div className='button-container'>
             <ButtonLink
@@ -48,7 +50,8 @@ const Page: React.FC = () => (
           <Heading type={5} color='gray' text='Promociona con estilo' />
           <p className='gray form-information'>
             Crea páginas atractivas y personalizadas para tus eventos. Añade imágenes, información,
-            fechas y enlaces oficiales de compra de entradas. Nosotros nos encargamos del diseño responsive y profesional.
+            fechas y enlaces oficiales de compra de entradas. Nosotros nos encargamos del diseño
+            responsive y profesional.
           </p>
           <div className='button-container'>
             <ButtonLink
@@ -66,7 +69,9 @@ const Page: React.FC = () => (
       <div className='container'>
         <div className='center'>
           <Heading type={5} color='gray' text='¿Cómo funciona?' />
-          <p className='gray'>Te acompañamos en cada paso para asegurar que tu evento sea un éxito.</p>
+          <p className='gray'>
+            Te acompañamos en cada paso para asegurar que tu evento sea un éxito.
+          </p>
         </div>
       </div>
 
@@ -113,7 +118,8 @@ const Page: React.FC = () => (
 
 const title = 'Organizadores';
 const canonical = 'https://streamevents.app/organizers';
-const description = 'StreamEvents conecta organizadores de eventos con miles de fans del mundo streaming.';
+const description =
+  'StreamEvents conecta organizadores de eventos con miles de fans del mundo streaming.';
 
 export const metadata: Metadata = {
   title,

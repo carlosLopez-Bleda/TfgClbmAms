@@ -16,21 +16,39 @@ const Footer: React.FC = () => (
       </div>
 
       <div className='links'>
-        <Link href='/' className='white'>Inicio</Link>
-        <Link href='/venues' className='white'>Lugares</Link>
-        <Link href='/members/tickets' className='white'>Mis entradas</Link>
-        <Link href='/members/account' className='white'>Mi cuenta</Link>
+        <Link href='/' className='white'>
+          Inicio
+        </Link>
+        <Link href='/venues' className='white'>
+          Lugares
+        </Link>
+        <Link href='/members/tickets' className='white'>
+          Mis entradas
+        </Link>
+        <Link href='/members/account' className='white'>
+          Mi cuenta
+        </Link>
       </div>
 
       <div className='links'>
-        <Link href='/help' className='white'>Ayuda</Link>
-        <Link href='/news' className='white'>Noticias</Link>
-        <Link href='/contact' className='white'>Contacto</Link>
-        <Link href='/promoters' className='white'>Para organizadores</Link>
+        <Link href='/help' className='white'>
+          Ayuda
+        </Link>
+        <Link href='/news' className='white'>
+          Noticias
+        </Link>
+        <Link href='/contact' className='white'>
+          Contacto
+        </Link>
+        <Link href='/promoters' className='white'>
+          Para organizadores
+        </Link>
       </div>
 
       <div className='members'>
-        <Link href='/members/signup' className='white'>Crear cuenta</Link>
+        <Link href='/members/signup' className='white'>
+          Crear cuenta
+        </Link>
         <span>o</span>
         <ButtonLink color='blue-filled' text='Iniciar sesión' url='members/signin' />
       </div>

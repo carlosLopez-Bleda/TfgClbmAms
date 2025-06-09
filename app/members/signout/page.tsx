@@ -13,13 +13,14 @@ const Page: React.FC = () => (
         <div className='center'>
           <Heading type={1} color='gray' text='Sesión cerrada' />
           <p className='gray form-information'>
-            Has cerrado sesión correctamente. Ahora puedes volver a la página de inicio con seguridad.
+            Has cerrado sesión correctamente. Ahora puedes volver a la página de inicio con
+            seguridad.
           </p>
 
           <div className='button-container'>
             <ButtonLink color='gray-overlay' text='Volver al inicio' url='/' />
             &nbsp; &nbsp;
-            <ButtonLink color='blue-filled' text='Iniciar sesión de nuevo' url='/members/signin' />
+            <ButtonLink color='blue-filled' text='Iniciar sesión de nuevo' url='/app/members/signin' />
           </div>
         </div>
       </div>
@@ -28,7 +29,7 @@ const Page: React.FC = () => (
 );
 
 const title = 'Cerrar sesión';
-const canonical = 'https://modern-ticketing.com/members/signout';
+const canonical = 'https://streamevents.com/members/signout';
 const description = 'StreamEvents es una solución moderna para eventos en línea y en vivo.';
 
 export const metadata: Metadata = {
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
     url: canonical,
     type: 'website',
     siteName: 'StreamEvents',
-    images: 'https://modern-ticketing.com/logo192.png',
+    images: 'https://streamevents.com/logo192.png',
   },
 };
 

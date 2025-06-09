@@ -14,8 +14,7 @@ const Page: React.FC = () => (
         <div className='center'>
           <Heading type={1} color='gray' text='Change password' />
           <p className='gray form-information'>
-            Please enter your new password. It&apos;s a good idea to use a strong password that you
-            are not using elsewhere. Your new password must be at least 8 characters.
+             Por favor, introduce tu nueva contraseña. Es recomendable usar una contraseña segura que no estés utilizando en otro sitio. Tu nueva contraseña debe tener al menos 8 caracteres.
           </p>
         </div>
         <Form />
@@ -25,21 +24,21 @@ const Page: React.FC = () => (
 );
 
 const title = 'Change password';
-const canonical = 'https://modern-ticketing.com/members/password';
-const description = 'Modern ticketing is a modern ticketing solution';
+const canonical = 'https://streamevents.com/members/password';
+const description = '';
 
 export const metadata: Metadata = {
   title,
   description,
-  keywords: 'modern ticketing',
+  keywords: 'stream events',
   alternates: { canonical },
   openGraph: {
     title,
     description,
     url: canonical,
     type: 'website',
-    siteName: 'Modern Ticketing',
-    images: 'https://modern-ticketing.com/logo192.png',
+    siteName: 'Stream Events',
+    images: 'https://streamevents.com/logo192.png',
   },
 };
 
