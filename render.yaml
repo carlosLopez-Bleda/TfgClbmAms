@@ -10,5 +10,5 @@ services:
       - key: NODE_VERSION
         value: 18
       - key: DATABASE_URL
-        value: file:./dev.db
+        value: file:./prisma/dev.db
     staticPublishPath: .next
