@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import Link from 'next/link';
 
 // hooks
@@ -16,6 +16,7 @@ const Header: React.FC = () => {
 
   const [menu, setMenu] = useState<boolean>(false);
   const [dropdown, setDropdown] = useState<boolean>(false);
+  const [user, setUser] = useState<{ email: string } | null>(null);
 
   useClickOutside(wrapperRef, () => {
     setDropdown(false);
@@ -23,6 +24,22 @@ const Header: React.FC = () => {
 
   const menuState = (): void => {
     setMenu((state) => !state);
+  };
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem('user');
+    if (storedUser) {
+      try {
+        setUser(JSON.parse(storedUser));
+      } catch {
+        localStorage.removeItem('user');
+      }
+    }
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem('user');
+    window.location.href = '/members/signin';
   };
 
   return (
@@ -55,26 +72,37 @@ const Header: React.FC = () => {
         </div>
 
         <div className='members' ref={wrapperRef}>
-          {/* Autenticación futura */}
-          <Link href='/members/account'>
-            <ProfilePhoto
-              image='https://i.pinimg.com/736x/68/76/99/6876993a25a8fc274cc09aee12171034.jpg'
-              size='small'
-            />
-          </Link>
-          <button type='button' className='menu-opener' onClick={() => setDropdown(!dropdown)}>
-            Alex
-            <span className='material-symbols-outlined'>
-              {dropdown ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}
-            </span>
-          </button>
-          {dropdown && (
-            <Dropdown color='gray'>
-              <DropdownItem url='members/tickets' text='Mis entradas' />
-              <DropdownItem url='members/account' text='Mi cuenta' />
-              <hr />
-              <DropdownItem url='members/signout' text='Cerrar sesión' />
-            </Dropdown>
+          {user ? (
+            <>
+              <Link href='/members/account'>
+                <ProfilePhoto
+                  image='https://i.pinimg.com/736x/68/76/99/6876993a25a8fc274cc09aee12171034.jpg'
+                  size='small'
+                />
+              </Link>
+              <button
+                type='button'
+                className='menu-opener'
+                onClick={() => setDropdown(!dropdown)}
+              >
+                {user.email.split('@')[0]}
+                <span className='material-symbols-outlined'>
+                  {dropdown ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}
+                </span>
+              </button>
+              {dropdown && (
+                <Dropdown color='gray'>
+                  <DropdownItem url='members/tickets' text='Mis entradas' />
+                  <DropdownItem url='members/account' text='Mi cuenta' />
+                  <hr />
+                  <button className='dropdown-link' onClick={handleLogout}>
+                    Cerrar sesión
+                  </button>
+                </Dropdown>
+              )}
+            </>
+          ) : (
+            <Link href='/members/signin'>Iniciar sesión</Link>
           )}
         </div>
       </div>
