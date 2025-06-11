@@ -11,9 +11,6 @@ import Input from '@components/Form/Input';
 import Button from '@components/Button/Button';
 import Loader from '@components/Loader/Loader';
 
-// utils
-import Request, { type IRequest, type IResponse } from '@utils/Request';
-
 // interfaces
 interface IFormProps {
   email: string;
@@ -39,22 +36,26 @@ const Form: React.FC = () => {
     hideAlert();
     setLoading(true);
 
-    const parameters: IRequest = {
-      url: 'v1/signin/password',
-      method: 'POST',
-      postData: {
-        email: formValues.email,
-        password: formValues.password,
-      },
-    };
+    try {
+      const res = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: formValues.email,
+          password: formValues.password,
+        }),
+      });
 
-    const req: IResponse = await Request.getResponse(parameters);
-    const { status, data } = req;
+      const data = await res.json();
 
-    if (status === 200) {
-      // Redirigir o actualizar estado de sesión aquí
-    } else {
-      showAlert({ type: 'error', text: data.title ?? 'Error al iniciar sesión.' });
+      if (res.ok) {
+        showAlert({ type: 'success', text: 'Inicio de sesión correcto' });
+        window.location.href = '/members/account';
+      } else {
+        showAlert({ type: 'error', text: data.error || 'Error al iniciar sesión' });
+      }
+    } catch (error) {
+      showAlert({ type: 'error', text: 'Error en el servidor' });
     }
 
     setLoading(false);

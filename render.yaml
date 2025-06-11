@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: nextjs-app
+    runtime: node
+    repo: https://github.com/carlosLopez-Bleda/TfgClbmAms
+    branch: main
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+      - key: DATABASE_URL
+        value: file:./dev.db
+    staticPublishPath: .next
