@@ -27,12 +27,12 @@ const Page: React.FC = () => (
 
 const title = 'Activación de e-mail';
 const canonical = 'https://streamevents.com/members/activate/email';
-const description = 'Stream Events es una solución moderna para eventos y entradas';
+const description = 'Stream Events es una aplicación para eventos de streamers';
 
 export const metadata: Metadata = {
   title,
   description,
-  keywords: 'entradas eventos ticketing moderno',
+  keywords: 'entradas eventos StreamsEvents moderno',
   alternates: { canonical },
   openGraph: {
     title,

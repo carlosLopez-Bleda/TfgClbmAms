@@ -31,7 +31,7 @@ const description = 'Una solución moderna para la gestión de entradas en líne
 export const metadata: Metadata = {
   title,
   description,
-  keywords: 'entradas modernas, gestión eventos, ticketing',
+  keywords: 'entradas modernas, gestión eventos, streamEvents',
   alternates: { canonical },
   openGraph: {
     title,

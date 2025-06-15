@@ -31,7 +31,7 @@ const Page: React.FC = () => (
 
 const title = 'Crear cuenta';
 const canonical = 'https://streamevents.com/members/signup';
-const description = 'Modern ticketing es una solución moderna de venta de entradas';
+const description = 'MS';
 
 export const metadata: Metadata = {
   title,

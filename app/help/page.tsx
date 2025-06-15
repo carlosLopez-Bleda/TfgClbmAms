@@ -156,7 +156,7 @@ export const metadata: Metadata = {
     url: canonical,
     type: 'website',
     siteName: 'StreamEvents',
-    images: 'https://modern-ticketing.com/logo192.png', // reemplázalo si tienes logo propio
+    images: 'https://stream-events.com/logo192.png', // reemplázalo si tienes logo propio
   },
 };
 
